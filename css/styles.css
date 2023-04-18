@@ -48,6 +48,7 @@ img{
 
 .button{
     display: inline-block;
+    padding: 0;
 }
 .navigation {
     display: flex;
@@ -287,6 +288,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #E7E9FC;
         border: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     border-radius: 100%;
@@ -733,9 +735,10 @@ padding-top: 40px;
 }
 .work-portfolio:hover .overlay {
     transform: translateY(0);
-
 }
-
+.work-portfolio:focus .overlay {
+    transform: translateY(0);
+}
 .portfolio-work-content{
     border: 1px solid #E7E9FC;
     padding: 32px 16px;
